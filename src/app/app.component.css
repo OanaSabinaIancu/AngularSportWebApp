@@ -51,4 +51,35 @@
     background-color: #00000093;
 }
 
+.toolbar {
+    background-color: #00000093;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+.container2{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    right: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+  
 

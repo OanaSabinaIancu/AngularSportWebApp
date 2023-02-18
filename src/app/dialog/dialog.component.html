@@ -1,0 +1,34 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Nume</mat-label>
+            <input formControlName="Nume" matInput placeholder="Nume">
+          </mat-form-field>
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Prenume</mat-label>
+            <input formControlName="Prenume" matInput placeholder="Prenume">
+          </mat-form-field>
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Data Nasterii</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Echipa</mat-label>
+            <mat-select formControlName="Echipa" placeholder="Echipa">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
