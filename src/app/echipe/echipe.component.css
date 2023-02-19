@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+  }
+
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .toolbar {
+    background-color: #00000000;
+    height: 40px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }

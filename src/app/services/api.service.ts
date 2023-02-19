@@ -20,4 +20,17 @@ export class ApiService {
   deleteProduct(id : number){
     return this.http.delete<any>("http://localhost:3000/productList/"+id);
   }
+
+  postEchipe(data : AnimationPlaybackEventInit){
+    return this.http.post<any>("http://localhost:3000/Echipe/",data);
+  }
+  getEchipe(){
+    return this.http.get<any>("http://localhost:3000/Echipe/");
+  }
+  putEchipe(data : any,id : number){
+    return this.http.put<any>("http://localhost:3000/Echipe/"+id,data);
+  }
+  deleteEchipe(id : number){
+    return this.http.delete<any>("http://localhost:3000/Echipe/"+id);
+  }
 }

@@ -1,18 +1,42 @@
 {
   "productList": [
     {
-      "Nume": "Maria",
-      "Prenume": "Ana",
+      "Nume": "Luca",
+      "Prenume": "Mihai",
       "Echipa": "2",
-      "date": "2022-11-16T22:00:00.000Z",
-      "id": 2
+      "date": "2023-02-24T22:00:00.000Z",
+      "id": 5
+    },
+    {
+      "Nume": "Ion",
+      "Prenume": "Marius",
+      "Echipa": "1",
+      "date": "2023-02-15T22:00:00.000Z",
+      "id": 6
+    },
+    {
+      "Nume": "Albu",
+      "Prenume": "Cristi",
+      "Echipa": "2",
+      "date": "2023-02-09T22:00:00.000Z",
+      "id": 7
     }
   ],
-  "comments": [
+  "Echipe": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "IdEchipa": "1",
+      "NumeEchipa": "Real",
+      "id": 2
+    },
+    {
+      "IdEchipa": "2",
+      "NumeEchipa": "Steaua",
+      "id": 3
+    },
+    {
+      "IdEchipa": "3",
+      "NumeEchipa": "Dinamo",
+      "id": 4
     }
   ],
   "profile": {

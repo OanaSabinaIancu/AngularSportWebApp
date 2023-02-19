@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -18,11 +19,25 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table'; 
 import {MatPaginatorModule} from '@angular/material/paginator'; 
 import {MatSortModule} from '@angular/material/sort';
+import {MatMenuModule} from '@angular/material/menu';
+import { JucatoriComponent } from './jucatori/jucatori.component';
+import { EchipeComponent } from './echipe/echipe.component';
+import { DialogEchipeComponent } from './dialog-echipe/dialog-echipe.component';
+
+
+const appRoute: Routes = [
+  {path: '', redirectTo: 'Jucatori', pathMatch: 'full'},
+  {path: 'Jucatori', component:JucatoriComponent},
+  {path: 'Echipe', component:EchipeComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    JucatoriComponent,
+    EchipeComponent,
+    DialogEchipeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +56,9 @@ import {MatSortModule} from '@angular/material/sort';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatMenuModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
